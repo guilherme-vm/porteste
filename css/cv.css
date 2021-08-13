@@ -1,0 +1,1457 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.menuIcon, .mobileMenu {
+   display: none
+}
+
+#bold{
+    font-weight: 500;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#AlvesMartins, #percurso, #linguas, #software{
+scroll-margin-top: 150px;
+}
+
+
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+.menu{
+    background-color: white;
+    text-align: center;
+    box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 0;
+}
+.menu a{
+    color:black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 15px;
+    margin:0 auto;
+    margin: 0 2vw;
+    line-height: 50px;
+    font-weight: 400;   
+}
+
+
+#picked{
+    font-weight: 700;
+}
+
+
+
+.clickMenu{
+    position: fixed;
+    bottom: 20px;
+    left:30px;
+    opacity: 0;
+    transition: 600ms;
+}
+
+.scrollOption{
+    width: 20px;
+    height:20px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 50%;
+    content: '';
+    margin: 10px;
+    transition: 400ms;
+}
+
+.scrollOption:hover{
+    background-color: black;
+}
+
+.academicsMenu{
+    float: left;
+    margin-left:40px;
+    margin-top:-30px;
+    opacity:0;
+}
+
+.optionSelected{
+background-color: black;
+}
+
+.optionUnselected{
+background-color: white;
+}
+
+
+
+.title{
+    width: 100vw;
+    height:100vh;
+    display: table;
+    z-index: -1;
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+
+h1{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-size: 100px;
+    text-transform: uppercase;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+
+
+
+
+
+.content{
+    top:110vh;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 60vw;
+    z-index: -1;
+}
+
+#this{
+    top:190vh;
+}
+
+#independent{
+    top:100px;
+}
+
+.school{
+}
+
+.instituicao{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    display: block;
+}
+
+.curso{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    font-size: 23px;
+}
+
+
+.points{
+    font-size:20px;
+    display: block;
+}
+
+
+.ano{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    border: 2px solid black;
+    padding: 5px 20px;
+    border-radius: 15px;
+    background-color: white;
+
+    /*
+float: right;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);*/
+    position: relative;
+   display: inline-block;
+    margin-top: 55px;
+}
+
+.cronologia::before{
+    position: absolute; 
+    content: ' ';
+    width: 2px;
+    height: 310px;
+    background-color: black;  
+    left: 50%;
+    margin-top:60px;
+}
+
+
+.circle{
+    width:30px;
+    height:30px;
+    border-radius: 30px;
+    background-color: white;
+    border:2px solid black;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 60px;
+}
+
+
+
+
+
+.cronologia{
+/* background-color: red; */
+    width: 500px;
+    position: relative;
+    text-align: center;
+    margin-bottom: 400px;
+    float: right;
+}
+
+
+.data{
+    position: absolute;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 30px;
+    margin-left:50px;
+    width: 200px;
+    text-align: left; 
+}
+
+.info{
+    position: absolute;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    margin-left:-440px;
+    line-height: 18px;
+    text-align: right;   
+    width: 400px;
+/*    margin-top:-5px;*/
+        margin-top:-10px;
+}
+
+#studentsC{
+
+    font-weight: 300;
+    font-size: 15px;
+    display: block;
+/*        margin-top:5px;*/
+}
+
+
+.cvEtapa{
+    color:black;
+    font-size:80px;
+    font-weight: 300;
+    letter-spacing: -4px;
+    color:rgb(80,80,80);
+    position: fixed;
+    transform: rotate(-90deg);
+
+   
+    opacity:0;
+    text-align: left;
+}
+
+#academics{
+ right:-100px;
+    bottom:130px;    
+}
+
+
+
+/*ANIMAÇÃO DE ACADEMICS*/
+.academicsAnimIn{
+    animation: academicsAnimIn 1000ms forwards ;
+    transition: ease;
+}
+
+@keyframes academicsAnimIn{
+    0% { 
+  }
+  100% {
+    bottom:170px;
+      opacity: 1;
+  }
+}
+
+.academicsAnimOut{
+
+    animation: academicsAnimOut 1000ms forwards;
+    transition: ease;
+}
+
+@keyframes academicsAnimOut{
+    0% { 
+    right:-100px;
+    bottom:170px;
+    opacity:1;
+  }
+  100% {
+  right:-170px;
+    bottom:170px;
+      opacity:0;
+  }
+}
+
+
+
+
+
+
+
+
+/*ANIMAÇÃO DE ACADEMICS*/
+
+#independentCourse{
+    right:-125px;
+    bottom:105px;
+}
+
+.independentAnimIn{
+    animation: independentAnimIn 1000ms forwards ;
+    transition: ease;
+}
+
+@keyframes independentAnimIn{
+    0% { 
+  }
+  100% {
+    bottom:195px;
+      opacity: 1;
+  }
+}
+
+.independentAnimOut{
+    animation: independentAnimOut 1000ms forwards ;
+    transition: ease;
+}
+
+@keyframes independentAnimOut{
+    0% { 
+        right:-125px;
+        bottom:195px;
+        opacity: 1;
+  }
+  100% {
+    right:-225px;
+      bottom: 200px;
+      opacity: 0;
+  }
+}
+
+
+
+/*ANIMAÇÃO DE LANGUAGE*/
+#languageCourse{
+    right:-150px;
+    bottom:150px;
+}
+
+.languageAnimIn{
+    animation: languageAnimIn 1000ms forwards ;
+    transition: ease;
+}
+
+@keyframes languageAnimIn{
+    0% { 
+  }
+  100% {
+    bottom:220px;
+    opacity:1;
+  }
+}
+
+.languageAnimOut{
+    animation: languageAnimOut 1000ms forwards ;
+    transition: ease;
+}
+
+@keyframes languageAnimOut{
+    0% { 
+        right:-150px;
+        bottom:220px;
+        opacity: 1;
+  }
+  100% {
+     right:-190px;
+    bottom:220px;
+    opacity:0;
+  }
+}
+
+
+/*ANIMAÇÃO DE LANGUAGE*/
+#programs{
+    right:-80px;
+    bottom:150px;
+}
+
+.programsAnimIn{
+    animation: programsAnimIn 1000ms forwards ;
+    transition: ease;
+}
+
+@keyframes programsAnimIn{
+    0% { 
+  }
+  100% {
+    bottom:220px;
+    opacity:1;
+  }
+}
+
+.programsAnimOut{
+    animation: programsAnimOut 1000ms forwards ;
+    transition: ease;
+}
+
+@keyframes programsAnimOut{
+    0% { 
+        right:-150px;
+        bottom:220px;
+        opacity: 1;
+  }
+  100% {
+     right:-190px;
+    bottom:220px;
+    opacity:0;
+  }
+}
+
+
+
+
+
+.projects{
+    clear: both;
+}
+
+.precurso{
+/*background-color: red; */
+    width: 200px;
+    position: absolute;
+    top:260vh;
+    margin-bottom: 300px;
+   
+}
+
+.precurso::before{
+    position: absolute; 
+    content: ' ';
+    width: 2px;
+    height: 700px;
+    background-color: black;  
+    left: 50%;
+    margin-top: 50px;
+}
+
+
+.circleP{
+    width:20px;
+    height:20px;
+    border-radius: 30px;
+    background-color: white;
+    border:2px solid black;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 80px;
+}
+
+
+.event{
+    position: absolute;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 24px;
+    margin-left:60px;
+    width: 600px;
+    text-align: left; 
+    
+}
+
+.eventDisc{
+    font-weight: 200;
+    font-size: 20px;
+    margin-left:20px;
+}
+
+.date{
+    position: absolute;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    margin-left:-135px;
+    line-height: 18px;
+    text-align: right;
+    width: 100px;
+}
+
+.present{
+    font-weight: 300;
+    text-transform: uppercase;
+   
+}
+
+
+.languageSkills{
+    position: absolute;
+    top:400vh;
+    z-index: -1;
+}
+
+.languageBox{
+    border: 1px solid transparent;
+    
+    left:0;
+    width: 60vw;
+    margin-left: 20vw;
+    margin-bottom: 50px;;
+    border-radius: 30px;
+    background-color: #FCFCFC;
+    background-color: white;
+    box-shadow: 0px 20px 50px rgba(50, 50, 50, 0.1);
+}
+
+.language{
+    font-family: 'Work Sans', sans-serif;
+    color: rgb(50,50,50);
+    font-weight: 600;
+    font-size: 40px;
+    padding: 30px;
+    padding-left: 10%;
+    margin-right: 40%;
+    display: block; 
+}
+
+.testao{
+
+
+}
+
+
+.languageLevel{
+    font-weight: 300;
+    font-size: 20px;
+    margin-left:10px;  
+}
+
+
+.levels{
+    display: block;
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 30px;
+    margin-left: 15%;
+    margin-bottom: 70px;
+    margin-top:-40px;
+}
+
+.certificateBox{
+    background-color: white;
+    color: rgb(100,100,100);
+    border-radius: 40px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    width: 35%;
+    height:306px;
+    float: right;
+    padding: 10px;
+    margin-top: -325px;
+    margin-right:-15px;
+    box-shadow: -5px 0px 25px rgba(150, 150, 150, 0.1);
+}
+
+#englishCertificateBox{
+margin-top: -354px;
+    height: 335px;
+}
+
+
+.certificate{
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 30px;
+    display: block;
+    line-height: 15px;
+    padding: 10px;   
+}
+
+.programSkills{
+    position: absolute;
+    width: 70%;
+    top:550vh;
+    margin-left:15%;
+    text-align: center;
+    z-index: -1;
+
+}
+
+#programMargin{
+    margin:0px;
+}
+
+
+.program{
+    width: 190px;
+    height:190px;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0px 5px 30px rgba(50, 50, 50, 0.1);
+    display: inline-block;
+    margin:10px;
+
+   
+}
+
+
+.programName{
+    font-weight: 600;
+    font-size: 20px;
+    width: 140px;
+    margin-top: 25px;
+    margin-left: -70px;
+    position: absolute;
+    text-align: left;
+    float: left;
+    color: rgb(50,50,50);
+}
+
+.programDescription{
+    font-weight: 200;
+    font-size: 14px;
+    width: 140px;
+    margin-left:25px;
+    margin-top:60px;
+    display: block;
+    position: absolute;
+    text-align: left;
+}
+
+.footer{
+    width: 100%;
+    height: 440px;
+    background-color: black;
+    position: absolute;
+    top:640vh;
+    left:0;
+}
+
+.icons{
+    position: absolute;
+    margin-top:50px;
+    margin-bottom:50px;
+    left: 50%;
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
+}
+
+.icon{
+    width: 50px;
+    margin: 0 10px;
+}
+
+.name{
+    color:white;
+    display: block;
+    text-align: center;
+    margin-top:140px;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.city{
+    color:white;
+    display: block;
+    text-align: center;
+    line-height: 25px;
+    font-weight: 400;
+}
+
+
+.menu a:hover{
+    animation: variable 200ms forwards;
+}
+
+@keyframes variable {
+    0%{
+      font-weight: 400;
+    }
+    100%{
+    font-weight: 600;
+    }
+}
+
+
+.f1Media{
+    font-weight: 500;
+    display: block;
+}
+
+#f1Media{
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*            iphone*/
+@media only screen and (max-width: 800px){
+   .menuIcon {
+    display: block;
+    width: 40px;
+    position: absolute;
+    top: 45px;
+    right: 25px;
+}
+    
+   .mobileMenu{
+       display: block;
+        width: 100%;
+        height:100%;
+        position: fixed;
+        background:white;
+        top:0;
+        left:0;
+        z-index: 2;
+        transform: translateY(-100%);
+        transition: 1200ms;
+    }
+    
+    .mobileMenuSlideAnimationIn{
+        transform: translateY(0%);
+    }
+    
+    .mobileMenuSlideAnimationOut{
+        transform: translateY(-100%);
+    }
+    
+    .mobileMenuSlide{
+        text-align: center;
+        padding-inline-start: 0px;
+        margin-top: 80px;
+    }
+    
+    .mobileMenuOption {
+    display: block;
+    left: 0;
+    font-size: 20px;
+    padding: 10px;
+    margin: 20px auto;
+    padding: 15px 0;
+        font-weight: 300;
+        text-transform: uppercase;
+}
+    li a{
+        text-decoration: none;
+        color:black;
+}
+    
+    #soloHide{
+        display: none;
+    }
+    
+
+    
+    .clickMenu{
+  display:none;
+}
+/*
+
+.scrollOption{
+    width: 20px;
+    height:20px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 50%;
+    content: '';
+    margin: 10px;
+    transition: 400ms;
+}
+*/
+/*
+
+.scrollOption:hover{
+    background-color: black;
+}
+
+.academicsMenu{
+    float: left;
+    margin-left:40px;
+    margin-top:-30px;
+    opacity:0;
+}
+*/
+
+.optionSelected{
+background-color: black;
+}
+
+.optionUnselected{
+background-color: white;
+}
+
+
+
+.title{
+    width: 100vw;
+    height:100vh;
+    display: table;
+    z-index: -1;
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+
+h1{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-size: 100px;
+    text-transform: uppercase;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+
+
+
+
+
+.content{
+    top:110vh;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 60vw;
+    z-index: -1;
+}
+
+#this{
+    top:120vh;
+}
+
+#independent{
+    top:-150px;
+    left:-50px;
+}
+
+.school{
+}
+
+.instituicao{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    display: block;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+
+.curso{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+
+.points{
+    font-size:20px;
+    display: block;
+}
+
+
+.ano{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    border: 2px solid black;
+    padding: 5px 20px;
+    border-radius: 15px;
+    background-color: white;
+
+    /*
+float: right;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);*/
+    position: relative;
+   display: inline-block;
+    margin-top: 55px;
+}
+
+.cronologia::before{
+    position: absolute; 
+    content: ' ';
+    width: 2px;
+    height: 430px;
+    background-color: black;  
+    left: 50%;
+    margin-top:60px;
+}
+    
+    #cronologiaPCS:before{
+         height: 500px;
+    }
+
+
+.circle{
+    width:30px;
+    height:30px;
+    border-radius: 30px;
+    background-color: white;
+    border:2px solid black;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+    #circlePCS{
+        margin-bottom: 100px;
+    }
+
+
+
+
+.cronologia{
+/* background-color: red; */
+/*
+    width: 350px;
+    position: relative;
+    text-align: center;
+    margin-bottom: 400px;
+    float: center;
+*/
+left: 150px;
+    width: 200px;
+    float: none;
+}
+
+
+.data{
+/*    position: absolute;*/
+/*    font-family: Work Sans;*/
+
+    font-size: 15px;
+    line-height: 20px;
+    margin-left: 30px;
+    margin-top: 5px;
+    width: 100px;
+
+}
+
+.info{
+    position: absolute;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    margin-left:-200px;
+    line-height: 18px;
+    text-align: right;   
+    width: 150px;
+    margin-top:15px;
+       margin-top:5px;
+        width: 210px;
+    left: -30px;
+}
+
+#este{
+ 
+}
+
+    
+    .f1Media, #f1Media{
+        font-size: 20px;
+        display: block;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+
+.cvEtapa{
+   display: none;
+}
+
+#academics{
+ right:-100px;
+    bottom:130px;
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+/*ANIMAÇÃO DE ACADEMICS*/
+
+#independentCourse{
+    right:-125px;
+    bottom:105px;
+}
+
+
+
+/*ANIMAÇÃO DE LANGUAGE*/
+#languageCourse{
+    right:-150px;
+    bottom:150px;
+}
+
+
+
+/*ANIMAÇÃO DE LANGUAGE*/
+#programs{
+    right:-80px;
+    bottom:150px;
+}
+
+
+
+
+.projects{
+    clear: both;
+}
+
+.precurso{
+/*background-color: red; */
+    width: 200px;
+    position: absolute;
+    top:250vh;
+    margin-bottom: 300px;
+   
+}
+
+.precurso::before{
+    position: absolute; 
+    content: ' ';
+    width: 2px;
+    height: 700px;
+    background-color: black;  
+    left: 50%;
+    margin-top: 50px;
+}
+
+
+.circleP{
+    width:16px;
+    height:16px;
+    border-radius: 30px;
+    background-color: white;
+    border:2px solid black;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 80px;
+}
+
+
+.event{
+    position: absolute;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    margin-left:30px;
+    width: 250px;
+    text-align: left; 
+    
+}
+
+.eventDisc{
+    font-weight: 200;
+    font-size: 14px;
+    margin-left:20px;
+    display: block;
+    line-height: 1;
+    margin-top:5px;
+}
+
+    #sementeira {
+        display: block;
+    }
+    
+    
+.date{
+    position: absolute;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    margin-left:-115px;
+    line-height: 18px;
+    text-align: right;
+    width: 100px;
+}
+
+.present{
+    font-weight: 300;
+    text-transform: uppercase;
+   
+}
+
+
+.languageSkills{
+    position: absolute;
+    top:350vh;
+    z-index: -1;
+}
+
+.languageBox{
+
+    width: 90vw;
+    margin-left: 3vw;
+    margin-bottom: 50px;
+}
+
+    #boxSpanish{
+        height: 410px;
+    }
+    
+     
+.language{
+    font-size: 30px;
+    padding: 10px;
+    padding-left:10%;
+}
+
+.testao{
+
+
+}
+
+
+.languageLevel{
+    font-weight: 300;
+    font-size: 20px;
+    margin-left:10px;  
+}
+
+
+.levels{
+    margin-bottom: 70px;
+    margin-top:0px;
+}
+
+.certificateBox{
+  margin-right: 20px;
+    border-radius: 20px;
+    width: 260px;
+}
+
+#englishCertificateBox{
+    margin-top: -26px;
+     height: 195px;
+}
+
+     #boxEnglish{
+        height: 535px;
+    }
+    
+    #spanishCertificateBox{
+          margin-top: -26px;
+     height: 95px;
+    }
+
+.certificate{
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 30px;
+    display: block;
+    line-height: 15px;
+    padding: 10px;   
+}
+
+.programSkills{
+    width: 97%;
+    margin-left: 0;
+    top: 530vh;
+}
+
+#programMargin{
+    margin:0px;
+}
+
+
+.program{
+    width: 160px;
+    height:160px;
+    margin:5px;
+}
+
+
+.programName{
+    font-size: 18px;
+    width: 140px;
+    margin-top: 25px;
+    margin-left: -60px;
+
+}
+
+.programDescription{
+    margin-top:50px;
+     width: 120px;
+    font-size:12px;
+}
+
+.footer{
+    height: 340px;
+    top:670vh;
+}
+
+.icons{
+    width: 70%;
+    text-align: center;
+}
+
+.icon{
+    width: 40px;
+
+}
+
+.name{
+    margin-top:120px;
+    font-size: 16px;
+}
+
+.city{
+    font-size: 12px;
+}
+
+
+.menu a:hover{
+    animation: variable 200ms forwards;
+}
+
+@keyframes variable {
+    0%{
+      font-weight: 400;
+    }
+    100%{
+    font-weight: 600;
+    }
+}
+    
+    
+    
+    
+    
+    
+    .titleAnim{
+    animation: titleAnim 1s forwards;
+}
+
+@keyframes titleAnim{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(-20px);
+    }
+}
+    
+    .menu{
+        display:none;
+    }
+    
+    h1{
+       font-size:25px;
+        margin-top:50px;
+        margin-bottom: 50px;
+            display:block;
+    }
+    
+    .content{
+        top:100px;
+        width: 350px;
+    }
+    
+    
+    .backArrow{
+    width: 20px;
+    height: 20px;
+    position:relative;
+    top:45px;
+    left:40px;
+    background: url(../img/backArrow.svg)no-repeat;
+}
+
+.backArrow:hover{
+    background-image: url(../img/backArrowHover.svg);
+}
+}
+
+
+
+
+
+/* IPAD PRO Portrait */
+@media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+      
+      
+.clickMenu{
+          display:none;
+}
+.content{
+          transform: scale(1.4);
+        top: 120vh;
+}
+      
+#independent {
+    top: -70vh;
+    left: -170px;
+    transform: scale(1.2);
+}
+      
+.languageSkills {
+    top: 330vh;
+}
+      
+.programSkills {
+    position: absolute;
+    width: 70%;
+    top: 420vh;
+    margin-left: 15%;
+    text-align: center;
+    z-index: -1;
+}
+      
+         
+      .footer{
+          top:500vh;
+      }  
+      
+.icons {
+    text-align: center;
+    width: 100%;
+}
+      
+.icon{
+    width: 100px;
+    margin: 0 20px;
+}
+      
+.name{
+    margin-top: 210px;
+    font-size: 30px;
+}
+
+.city {
+    line-height: 40px;
+    font-size: 20px;
+}
+}
+
+
+
+
+/*—————————————— iMAC —————————————-*/
+
+@media only screen and (min-width: 2000px){
+    h1{
+        font-size: 130px;
+    }
+    
+    .menu a {
+    font-size: 22px;
+    margin: 0 3vw;
+    line-height: 70px;
+}
+    
+.content {
+    width: 30vw;
+    transform: scale(1.8);
+    margin-top:10vh;
+}
+    #independent {
+    top: -200vh;
+}
+    
+    .cronologia{
+        margin-bottom:0;
+    }
+    
+    .languageBox {
+    width: 50vw;
+        margin-left: 25vw;
+    }
+    
+    .language{
+        font-size: 54px;
+    }
+    
+    .languageLevel {
+    font-size: 34px;
+    }
+    
+    
+    .levels {
+    font-size: 30px;
+    line-height: 50px;   
+    }
+    
+    #englishCertificateBox {
+    margin-top: -493px;
+    height: 474px;
+}
+    
+    .certificate {
+    font-size: 22px;
+    line-height: 30px;
+    line-height: 28px;
+    padding: 20px;
+}
+    
+    
+     #spanishCertificateBox {
+    height: 425px;
+    margin-top: -444px;
+}
+    
+    
+    .programSkills {
+    position: absolute;
+    width: 40%;
+        margin-left:30%;
+        transform: scale(1.5);
+        top:520vh;
+    }
+    
+    
+    .footer{
+        top:600vh;
+    }
+    
+        
+    
+    
+    
+}

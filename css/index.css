@@ -24,7 +24,6 @@ h1{
     margin-left: 10vw;
     float: left;
     clear: left;
-        font-style: italic;*/
 
 }
 
@@ -35,7 +34,6 @@ h2{
     line-height: 30px;
     width: 35vw;
     margin-left: 15vw;
-/*    font-style: italic;*/
     float: left;
     clear: left;
     margin-top: 0px;
@@ -298,14 +296,21 @@ h4{
         padding: 0;
     }
     
+    .hello{
+        font-weight: 400;
+        font-size: 40px;
+    }
+    
     
     h1{
     font-family: 'Work Sans', sans-serif;
     font-weight: 200;
     font-size: 25px;
-    margin-top:50px;
+    margin-top: 20px;
     margin-left: 10vw;
-
+        width: 400px;
+        font-weight: 300;
+margin-bottom: 10px;
 }
 
 h2 {
@@ -321,8 +326,7 @@ h2 {
  
 .menu{
     transform: translateY(0%);
-    margin-top:30px;
-/*    margin-left: 00%;*/
+    margin-top: 10px;
     transform: translateX(-30%);
     position: inherit;
 }

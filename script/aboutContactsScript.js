@@ -2,7 +2,8 @@
 $("#slideMenuOpen").on("click", function(){
     $(".mobileMenu")
         .addClass("mobileMenuSlideAnimationIn")
-        .removeClass("mobileMenuSlideAnimationOut");
+        .removeClass("mobileMenuSlideAnimationOut")
+        .css("opacity", "1");
 })
 
 
@@ -10,7 +11,8 @@ $("#slideMenuOpen").on("click", function(){
 $("#slideMenuClose").on("click", function(){
     $(".mobileMenu")
         .addClass("mobileMenuSlideAnimationOut")
-        .removeClass("mobileMenuSlideAnimationIn");;
+        .removeClass("mobileMenuSlideAnimationIn")  
+        .css("opacity", "0");
 })
 
 

@@ -673,6 +673,7 @@ position: absolute;
 }
     
    .mobileMenu{
+       opacity: 0;
        display:block;
         width: 100%;
         height:100%;
@@ -704,7 +705,7 @@ position: absolute;
     left: 0;
     font-size: 20px;
     padding: 10px;
-    margin: 20px auto;
+    margin: 10px auto;
     padding: 15px 0;
     font-weight: 300;
     text-transform: uppercase;

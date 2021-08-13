@@ -5,7 +5,8 @@ $("#slideMenuOpen").on("click", function(){
     console.log("open");
     $(".mobileMenu")
         .addClass("mobileMenuSlideAnimationIn")
-        .removeClass("mobileMenuSlideAnimationOut");
+        .removeClass("mobileMenuSlideAnimationOut")
+        .css("opacity", "1");
 })
 
 
@@ -14,7 +15,8 @@ $("#slideMenuClose").on("click", function(){
     $(".mobileMenu")
         .css("display", "block")
         .addClass("mobileMenuSlideAnimationOut")
-        .removeClass("mobileMenuSlideAnimationIn");
+        .removeClass("mobileMenuSlideAnimationIn")
+        .css("opacity", "0");
         
 })
 

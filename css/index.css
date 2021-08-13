@@ -18,14 +18,21 @@ body{
 
 h1{
     font-family: 'Work Sans', sans-serif;
-    font-weight: 200;
+    font-weight: 300;
     font-size: 25px;
     margin-top:25vh;
     margin-left: 10vw;
     float: left;
     clear: left;
+    width: 400px;
 
 }
+
+
+.hello{
+        font-weight: 500;
+        font-size: 40px;
+    }
 
 h2{
     font-family: 'Work Sans', sans-serif;
